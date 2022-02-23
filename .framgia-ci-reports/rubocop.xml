@@ -1,0 +1,10 @@
+<?xml version='1.0'?>
+<checkstyle>
+  <file name='app/channels/application_cable/channel.rb'/>
+  <file name='app/channels/application_cable/connection.rb'/>
+  <file name='app/controllers/application_controller.rb'/>
+  <file name='app/helpers/application_helper.rb'/>
+  <file name='app/jobs/application_job.rb'/>
+  <file name='app/mailers/application_mailer.rb'/>
+  <file name='app/models/application_record.rb'/>
+</checkstyle>
