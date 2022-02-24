@@ -1,0 +1,11 @@
+settings:
+  link: "http://www.railstutorial.org/"
+  help: "http://www.railstutorial.org/help"
+  contact: "https://news.railstutorial.org/contact"
+  about: "https://news.railstutorial.org/about"
+  book: "http://www.railstutorial.org/book"
+  author: "https://www.michaelhartl.com/"
+  news: "https://news.railstutorial.org/"
+  learn: "https://www.learnenough.com/"
+  screencast: "https://screencasts.railstutorial.org/"
+  RoR: "https://rubyonrails.org/"

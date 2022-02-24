@@ -1,0 +1,15 @@
+<footer class="footer">
+  <small>
+    <%= t("the") %>
+    <%= link_to t("tutorial"), Settings.settings.link %>
+    <%= t(".by") %>
+    <%= link_to t(".author"), Settings.settings.author %>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t(".about"), about_path %></li>
+      <li><%= link_to t(".contact"), contact_path %></li>
+      <li><%= link_to t(".news"), Settings.settings.news %></a></li>
+    </ul>
+  </nav>
+</footer>

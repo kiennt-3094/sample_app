@@ -1,0 +1,16 @@
+<% provide :title, "Contact" %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= t(".title") %> | <%= t("title") %>
+    </title>
+  </head>
+
+  <body>
+    <h1><%= t(".title") %></h1>
+    <p>
+        <%= t(".content") %>
+        <%= link_to t(".page"), Settings.settings.contact %>
+    </p>
+  </body>
+</html>
