@@ -9,3 +9,11 @@ settings:
   learn: "https://www.learnenough.com/"
   screencast: "https://screencasts.railstutorial.org/"
   RoR: "https://rubyonrails.org/"
+  user:
+    username:
+      max_length: 50
+    email:
+      max_length: 255
+      regex: !ruby/regexp "/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i"
+    password:
+      min_length: 6
