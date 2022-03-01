@@ -3,6 +3,8 @@ vi:
   title: "Ứng dụng demo Ruby On Rails"
   the: ""
   RoR: "Ruby on Rails"
+  welcome: "Chào mừng đến với ứng dụng demo"
+  not_exist: "Người dùng không tồn tại"
   layouts:
     header:
       logotext: "sample app"
@@ -44,4 +46,11 @@ vi:
   users:
     new:
       title: "Đăng ký "
-      content: "Đây sẽ là trang đăng ký dành cho người dùng mới."
+      name: "Tên"
+      email: "Email"
+      password: "Mật khẩu"
+      password_confirmation: "Xác nhận mật khẩu"
+      submit: "Hoàn tất"
+  error:
+    contain: "Thông tin nhập có"
+    error: "lỗi"
