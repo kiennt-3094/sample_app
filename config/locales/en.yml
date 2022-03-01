@@ -3,6 +3,8 @@ en:
   title: "Ruby On Rails Tutorial Sample App"
   the: "The"
   RoR: "Ruby on Rails"
+  welcome: "Welcome to the Sample App"
+  not_exist: "User doesn't exist"
   layouts:
     header:
       logotext: "sample app"
@@ -43,5 +45,12 @@ en:
       page: "contact page"
   users:
     new:
-      title: "Signup"
-      content: "This will be a signup page for new users."
+      title: "Sign Up"
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Password Confirmation"
+      submit: "Submit"
+  error:
+    contain: "The form contain"
+    error: "error"
