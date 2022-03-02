@@ -5,12 +5,18 @@ en:
   RoR: "Ruby on Rails"
   welcome: "Welcome to the Sample App"
   not_exist: "User doesn't exist"
+  invalid : "invalid_email_password_combination"
   layouts:
     header:
       logotext: "sample app"
       home: "Home"
       help: "Help"
       login: "Log in"
+      users: "users"
+      account: "account"
+      profile: "Profile"
+      settings: "Settings"
+      logout: "Log out"
     footer:
       by: "by"
       author: "Michael Hartl"
@@ -54,3 +60,9 @@ en:
   error:
     contain: "The form contain"
     error: "error"
+  session:
+    new:
+      login: "Log in"
+      new_user: "New user ?"
+      signup: "Sign up now!"
+      remember: "Remember me on this device"
