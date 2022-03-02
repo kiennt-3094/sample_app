@@ -5,12 +5,18 @@ vi:
   RoR: "Ruby on Rails"
   welcome: "Chào mừng đến với ứng dụng demo"
   not_exist: "Người dùng không tồn tại"
+  invalid: "Email/mật khẩu không hợp lệ"
   layouts:
     header:
       logotext: "sample app"
       home: "Trang chủ"
       help: "Trợ giúp"
-      login: "Đăng nhập "
+      login: "Đăng nhập"
+      users: "Người dùng"
+      account: "Tài khoản"
+      profile: "Hồ sơ"
+      settings: "Cài đặt"
+      logout: "Đăng xuất"
     footer:
       by: "bởi"
       author: "Michael Hartl"
@@ -54,3 +60,8 @@ vi:
   error:
     contain: "Thông tin nhập có"
     error: "lỗi"
+  session:
+    new:
+      login: "Đăng nhập"
+      new_user: "Bạn là người dùng mới ?"
+      signup: "Đăng ký ngay !"
