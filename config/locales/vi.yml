@@ -1,0 +1,68 @@
+vi:
+  tutorial: "Hướng dẫn Ruby On Rails "
+  title: "Ứng dụng demo Ruby On Rails"
+  the: ""
+  RoR: "Ruby on Rails"
+  welcome: "Chào mừng đến với ứng dụng demo"
+  not_exist: "Người dùng không tồn tại"
+  invalid: "Email/mật khẩu không hợp lệ"
+  layouts:
+    header:
+      logotext: "sample app"
+      home: "Trang chủ"
+      help: "Trợ giúp"
+      login: "Đăng nhập"
+      users: "Người dùng"
+      account: "Tài khoản"
+      profile: "Hồ sơ"
+      settings: "Cài đặt"
+      logout: "Đăng xuất"
+    footer:
+      by: "bởi"
+      author: "Michael Hartl"
+      about: "Thông tin"
+      contact: "Liên hệ"
+      news: "Tin tức"
+  static_pages:
+    home:
+      title: "Trang chủ"
+      welcome: "Chào mừng đến với ứng dụng demo"
+      home_content1: "Đây là trang chủ của"
+      home_content2: "ứng dụng demo"
+      signup: "Đăng ký ngay !"
+    help:
+      title: "Trợ giúp"
+      help_content1: "Để được trợ giúp về Rails Tutorial"
+      page: "Trang trợ giúp Rails Tutorial"
+      help_content2: "Để được trợ giúp về ứng dụng demo, hãy xem"
+    about:
+      title: "Thông tin"
+      about_content_1: ", một phần của"
+      about_content_2: "Learn Enough"
+      about_content_3: "tutorials, là một"
+      book: "cuốn sách"
+      and: "và"
+      about_content_4: "seri video"
+      about_content_5: "dạy phát triển ứng dụng web bằng"
+      about_content_6: "Đây là ứng dụng demo của tutorial."
+    contact:
+      title: "Liên hệ"
+      content: "Liên hệ về thông tin liên quan đến ứng dụng demo ở"
+      page: "trang liên hệ"
+  users:
+    new:
+      title: "Đăng ký "
+      name: "Tên"
+      email: "Email"
+      password: "Mật khẩu"
+      password_confirmation: "Xác nhận mật khẩu"
+      submit: "Hoàn tất"
+  error:
+    contain: "Thông tin nhập có"
+    error: "lỗi"
+  session:
+    new:
+      login: "Đăng nhập"
+      new_user: "Bạn là người dùng mới ?"
+      signup: "Đăng ký ngay !"
+      remember: "Nhớ tôi trên thiết bị này"
