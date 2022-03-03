@@ -17,3 +17,8 @@ settings:
       regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
     password:
       min_length: 6
+    gravatar:
+      size50: 50
+      size80: 80
+      email: "http://gravatar.com/emails"
+  per_page_10: 10

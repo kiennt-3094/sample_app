@@ -6,6 +6,12 @@ vi:
   welcome: "Chào mừng đến với ứng dụng demo"
   not_exist: "Người dùng không tồn tại"
   invalid: "Email/mật khẩu không hợp lệ"
+  updated: "Hồ sơ đã được cập nhật"
+  not_updated: "Thất bại. Xin hãy thử lại sau."
+  please: "Xin hãy đăng nhập"
+  deleted: "Đã xóa người dùng"
+  fail: "Xóa không thành công !"
+  access: "Bạn không có quyền truy cập trang này"
   layouts:
     header:
       logotext: "sample app"
@@ -50,13 +56,25 @@ vi:
       content: "Liên hệ về thông tin liên quan đến ứng dụng demo ở"
       page: "trang liên hệ"
   users:
-    new:
-      title: "Đăng ký "
+    form:
       name: "Tên"
       email: "Email"
       password: "Mật khẩu"
       password_confirmation: "Xác nhận mật khẩu"
+    new:
+      title: "Đăng ký "
       submit: "Hoàn tất"
+    edit:
+      title: "Chỉnh sửa thông tin người dùng"
+      password_confirmation: "Xác nhận mật khẩu"
+      save: "Lưu thay đổi"
+      change: "thay đổi"
+      update: "Cập nhật hồ sơ của bạn"
+    index:
+      title: "Tất cả người dùng"
+    user:
+      delete: "Xóa"
+      sure: "Bạn chắc chắn chứ ?"
   error:
     contain: "Thông tin nhập có"
     error: "lỗi"
