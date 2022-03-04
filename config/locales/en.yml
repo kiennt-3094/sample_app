@@ -6,6 +6,12 @@ en:
   welcome: "Welcome to the Sample App"
   not_exist: "User doesn't exist"
   invalid : "invalid_email_password_combination"
+  updated: "Profile updated"
+  not_updated: "Failure. Please try again later"
+  please: "Please log in"
+  deleted: "User deleted"
+  fail: "Delete fail!"
+  access: "You don't have permission to access this page"
   layouts:
     header:
       logotext: "sample app"
@@ -50,13 +56,25 @@ en:
       content: "Contact the Ruby on Rails Tutorial about the sample app at the"
       page: "contact page"
   users:
-    new:
-      title: "Sign Up"
+    form:
       name: "Name"
       email: "Email"
       password: "Password"
       password_confirmation: "Password Confirmation"
+    new:
+      title: "Sign Up"
       submit: "Submit"
+    edit:
+      title: "Edit user"
+      password_confirmation: "Password Confirmation"
+      save: "Save changes"
+      change: "change"
+      update: "Update your profile"
+    index:
+      title: "All users"
+    user:
+      delete: "Delete"
+      sure: "You sure ?"
   error:
     contain: "The form contain"
     error: "error"
