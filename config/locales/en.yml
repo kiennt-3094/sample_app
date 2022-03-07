@@ -16,6 +16,12 @@ en:
   check_email: "Please check your email to activate your account."
   account_activated: "Account activated!"
   invalid_link: "Invalid activation link"
+  email_sent: "Email sent with password reset instructions"
+  email_not_found: "Email address not found"
+  reset_expired: "Password reset has expired."
+  can't_be_blank: "Password can't be blank"
+  reset_successful: "Reset password successful"
+  reset_failed: "Reset password failed"
   layouts:
     header:
       logotext: "sample app"
@@ -84,6 +90,10 @@ en:
       hi: "Hi"
       welcome: " Welcome to the Sample App! Click on the link below to activate your account:"
       activate: "Activate"
+      reset: "Reset Password"
+      reset_link: "To reset your password click the link below:"
+      expire: "This link will expire in two hours."
+      ignore: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
   error:
     contain: "The form contain"
     error: "error"
@@ -92,4 +102,15 @@ en:
       login: "Log in"
       new_user: "New user ?"
       signup: "Sign up now!"
+      forgot_password: "forgot password"
       remember: "Remember me on this device"
+  password_resets:
+    new:
+      title: "Forgot password"
+      email: "email"
+      submit: "Submit"
+    edit:
+      title: "Reset password"
+      password: "Password"
+      confirmation: "Confirmation"
+      update_password: "Update password"
