@@ -47,3 +47,6 @@ yarn-debug.log*
 .framgia-ci-result.temp.yml
 
 /test
+
+# Ignore application configuration
+/config/application.yml
