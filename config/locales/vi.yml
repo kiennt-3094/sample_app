@@ -16,6 +16,12 @@ vi:
   check_email: "Vui lòng kiểm tra hộp thư để kích hoạt tài khoản."
   account_activated: "Tài khoản đã được kích hoạt!"
   invalid_link: "Đường dẫn không hợp lệ"
+  email_sent: "Đã gửi email hướng dẫn đặt lại mật khẩu."
+  email_not_found: "Không tìm thấy địa chỉ email"
+  reset_expired: "Thời gian đặt lại mật khẩu đã hết."
+  can't_be_blank: "Mật khẩu không được để trống"
+  reset_successful: "Đặt lại mật khẩu thành công"
+  reset_failed: "Đặt lại mật khẩu thất bại"
   layouts:
     header:
       logotext: "sample app"
@@ -84,6 +90,10 @@ vi:
       Hi: "Xin chào"
       welcome: " Chào mừng đến với ứng dụng demo. Kích vào đường dẫn dưới đây để kích hoạt tài khoản của bạn:"
       activate: "Kích hoạt"
+      reset: "Đặt lại mật khẩu"
+      reset_link: "Kích vào đường dẫn dưới đây để đặt lại mật khẩu:"
+      expire: "Đường dẫn này sẽ hết hạn trong vòng 2h."
+      ignore: "Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua tin nhắn này. Mật khẩu của bạn sẽ được giữ nguyên."
   error:
     contain: "Thông tin nhập có"
     error: "lỗi"
@@ -92,4 +102,15 @@ vi:
       login: "Đăng nhập"
       new_user: "Bạn là người dùng mới ?"
       signup: "Đăng ký ngay !"
+      forgot_password: "quên mật khẩu"
       remember: "Nhớ tôi trên thiết bị này"
+  password_resets:
+    new:
+      title: "Quên mật khẩu"
+      email: "email"
+      submit: "Hoàn tất"
+    edit:
+      title: "Đặt lại mật khẩu"
+      password: "Mật khẩu"
+      confirmation: "Xác nhận"
+      update_password: "Cập nhật mật khẩu"
