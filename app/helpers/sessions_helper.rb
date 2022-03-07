@@ -8,7 +8,7 @@ module SessionsHelper
       @current_user ||= User.find_by id: user_id
     elsif (user_id = cookies.signed[:user_id])
       user = User.find_by id: user_id
-      if user&.authenticated?(cookies[:remember_token])
+      if user&.authenticated?(:remember, cookies[:remember_token])
         log_in user
         @current_user = user
       end
@@ -23,6 +23,12 @@ module SessionsHelper
     forget(current_user)
     session.delete(:user_id)
     @current_user = nil
+  end
+
+  def login_remember user
+    log_in user
+    params[:session][:remember_me] == "1" ? remember(user) : forget(user)
+    redirect_back_or user
   end
 
   def remember user

@@ -22,3 +22,4 @@ settings:
       size80: 80
       email: "http://gravatar.com/emails"
   per_page_10: 10
+  localhost: "localhost:3000"

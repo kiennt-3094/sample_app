@@ -12,6 +12,10 @@ vi:
   deleted: "Đã xóa người dùng"
   fail: "Xóa không thành công !"
   access: "Bạn không có quyền truy cập trang này"
+  not_activated: "Tài khoản chưa được kích hoạt. Vui lòng kiểm tra hộp thư của bạn"
+  check_email: "Vui lòng kiểm tra hộp thư để kích hoạt tài khoản."
+  account_activated: "Tài khoản đã được kích hoạt!"
+  invalid_link: "Đường dẫn không hợp lệ"
   layouts:
     header:
       logotext: "sample app"
@@ -75,6 +79,11 @@ vi:
     user:
       delete: "Xóa"
       sure: "Bạn chắc chắn chứ ?"
+    email:
+      account_activation: "Kích hoạt tài khoản"
+      Hi: "Xin chào"
+      welcome: " Chào mừng đến với ứng dụng demo. Kích vào đường dẫn dưới đây để kích hoạt tài khoản của bạn:"
+      activate: "Kích hoạt"
   error:
     contain: "Thông tin nhập có"
     error: "lỗi"
