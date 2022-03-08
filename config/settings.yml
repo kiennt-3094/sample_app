@@ -24,3 +24,11 @@ settings:
   per_page_10: 10
   localhost: "localhost:3000"
   expiration_time: 2
+  micropost:
+    content:
+      max_length: 140
+    image:
+      type: ["image/jpeg", "image/gif", "image/png"]
+      types: "image/jpeg,image/gif,image/png"
+      max_size: 5
+      limit: 500
