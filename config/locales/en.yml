@@ -22,6 +22,14 @@ en:
   can't_be_blank: "Password can't be blank"
   reset_successful: "Reset password successful"
   reset_failed: "Reset password failed"
+  micropost_created: "Micropost created!"
+  micropost_deleted: "Micropost deleted"
+  micropost_invalid : "Micropost invalid"
+  deleted_fail: "Deleted fail"
+  following: "Following"
+  followers: "Followers"
+  follow: "Follow"
+  unfollow: "Unfollow"
   layouts:
     header:
       logotext: "sample app"
@@ -46,6 +54,7 @@ en:
       home_content1: "This is the homepage for the"
       home_content2: "sample application"
       signup: "Sign up now!"
+      micropost: "Micropost"
     help:
       title: "Help"
       help_content1: "Get help on the Ruby on Rails Tutorial at the"
@@ -74,6 +83,9 @@ en:
     new:
       title: "Sign Up"
       submit: "Submit"
+    show:
+      microposts: "microposts"
+      no_microposts: "Microposts unavailable"
     edit:
       title: "Edit user"
       password_confirmation: "Password Confirmation"
@@ -85,6 +97,7 @@ en:
     user:
       delete: "Delete"
       sure: "You sure ?"
+    view: "view my profile"
     email:
       account_activation: "Account activation"
       hi: "Hi"
@@ -114,3 +127,20 @@ en:
       password: "Password"
       confirmation: "Confirmation"
       update_password: "Update password"
+  microposts:
+    posted: "Posted"
+    ago: "ago"
+    delete: "delete"
+    sure: "You sure?"
+    oversized: "should be less than 5MB"
+    compose: "Compose new micropost..."
+    micropost: "micropost"
+
+activerecord:
+  error:
+    models:
+      micropost:
+        attributes:
+          image:
+            invalid_format: "must be a valid image format"
+            oversized: "should be less than 5MB"

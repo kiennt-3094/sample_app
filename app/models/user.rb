@@ -1,7 +1,18 @@
 class User < ApplicationRecord
+  has_many :microposts, dependent: :destroy
+  has_many :active_relationships, class_name: Relationship.name,
+            foreign_key: :follower_id, dependent: :destroy
+  has_many :passive_relationships, class_name: Relationship.name,
+            foreign_key: :followed_id, dependent: :destroy
+  has_many :following, through: :active_relationships, source: :followed
+  has_many :followers, through: :passive_relationships,
+            source: :follower
+
   attr_accessor :remember_token, :activation_token, :reset_token
+
   before_save :downcase_email
   before_create :create_activation_digest
+
   validates :name, presence: true,
     length: {maximum: Settings.settings.user.username.max_length}
   validates :email, presence: true,
@@ -60,6 +71,22 @@ class User < ApplicationRecord
     reset_sent_at < Settings.settings.expiration_time.hours.ago
   end
 
+  def feed
+    Micropost.relate_post(self).newest
+  end
+
+  def follow other_user
+    following << other_user
+  end
+
+  def unfollow other_user
+    following.delete other_user
+  end
+
+  def following? other_user
+    following.include? other_user
+  end
+
   private
   def downcase_email
     email.downcase!
@@ -72,6 +99,7 @@ class User < ApplicationRecord
 
   def create_reset_digest
     self.reset_token = User.new_token
-    update_columns reset_digest: User.digest(reset_token), reset_sent_at: Time.zone.now
+    update_columns reset_digest: User.digest(reset_token),
+                   reset_sent_at: Time.zone.now
   end
 end

@@ -4,7 +4,10 @@ class UsersController < ApplicationController
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: %i(destroy)
 
-  def show; end
+  def show
+    @microposts = pagy @user.microposts,
+                       items: Settings.settings.per_page_10
+  end
 
   def new
     @user = User.new
@@ -46,18 +49,24 @@ class UsersController < ApplicationController
     redirect_to users_url
   end
 
+  def following
+    @title = t "following"
+    @pagy, @users = pagy @user.following,
+                  items: Settings.settings.per_page_10
+    render "show_follow"
+  end
+
+  def followers
+    @title = t "followers"
+    @pagy, @users = pagy @user.followers,
+                  items: Settings.settings.per_page_10
+    render "show_follow"
+  end
+
   private
   def user_params
     params.require(:user).permit(:name, :email,
                                  :password, :password_confirmation)
-  end
-
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t "please"
-    redirect_to login_url
   end
 
   def correct_user
