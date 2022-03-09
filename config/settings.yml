@@ -20,6 +20,7 @@ settings:
     gravatar:
       size50: 50
       size80: 80
+      size30: 30
       email: "http://gravatar.com/emails"
   per_page_10: 10
   localhost: "localhost:3000"

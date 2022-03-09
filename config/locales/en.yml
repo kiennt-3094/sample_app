@@ -26,6 +26,10 @@ en:
   micropost_deleted: "Micropost deleted"
   micropost_invalid : "Micropost invalid"
   deleted_fail: "Deleted fail"
+  following: "Following"
+  followers: "Followers"
+  follow: "Follow"
+  unfollow: "Unfollow"
   layouts:
     header:
       logotext: "sample app"
