@@ -85,7 +85,7 @@ en:
       submit: "Submit"
     show:
       microposts: "microposts"
-      no_microposts: "Microposts unavailable"
+      no_microposts: "Micropost unavailable"
     edit:
       title: "Edit user"
       password_confirmation: "Password Confirmation"
