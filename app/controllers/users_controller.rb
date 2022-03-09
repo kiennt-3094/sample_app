@@ -4,7 +4,10 @@ class UsersController < ApplicationController
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: %i(destroy)
 
-  def show; end
+  def show
+    @microposts = pagy @user.microposts,
+                       items: Settings.settings.per_page_10
+  end
 
   def new
     @user = User.new
@@ -50,14 +53,6 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit(:name, :email,
                                  :password, :password_confirmation)
-  end
-
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t "please"
-    redirect_to login_url
   end
 
   def correct_user

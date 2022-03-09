@@ -22,6 +22,10 @@ vi:
   can't_be_blank: "Mật khẩu không được để trống"
   reset_successful: "Đặt lại mật khẩu thành công"
   reset_failed: "Đặt lại mật khẩu thất bại"
+  micropost_created: "Đã tạo bài đăng!"
+  micropost_deleted: "Đã xóa bài đăng"
+  micropost_invalid : "Bài đăng không hợp lệ"
+  deleted_fail: "Xóa không thành công"
   layouts:
     header:
       logotext: "sample app"
@@ -46,6 +50,7 @@ vi:
       home_content1: "Đây là trang chủ của"
       home_content2: "ứng dụng demo"
       signup: "Đăng ký ngay !"
+      micropost: "Bài đăng"
     help:
       title: "Trợ giúp"
       help_content1: "Để được trợ giúp về Rails Tutorial"
@@ -74,6 +79,9 @@ vi:
     new:
       title: "Đăng ký "
       submit: "Hoàn tất"
+    show:
+      microposts: "Bài đăng"
+      no_microposts: "Không có bài đăng khả dụng"
     edit:
       title: "Chỉnh sửa thông tin người dùng"
       password_confirmation: "Xác nhận mật khẩu"
@@ -85,6 +93,7 @@ vi:
     user:
       delete: "Xóa"
       sure: "Bạn chắc chắn chứ ?"
+    view: "Xem hồ sơ của tôi"
     email:
       account_activation: "Kích hoạt tài khoản"
       Hi: "Xin chào"
@@ -114,3 +123,20 @@ vi:
       password: "Mật khẩu"
       confirmation: "Xác nhận"
       update_password: "Cập nhật mật khẩu"
+  microposts:
+    posted: "Đăng thành công"
+    ago: "trước"
+    delete: "xóa"
+    sure: "Bạn chắc chắn chứ?"
+    oversized: "kích cỡ ảnh phải nhỏ hơn 5mb"
+    compose: "Khởi tạo bài đăng mới"
+    micropost: "bài đăng"
+
+activerecord:
+  error:
+    models:
+      micropost:
+        attributes:
+          image:
+            invalid_format: "Yêu cầu định dạng hợp lệ"
+            oversized: "kích cỡ ảnh phải nhỏ hơn 5mb"
