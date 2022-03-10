@@ -26,6 +26,10 @@ vi:
   micropost_deleted: "Đã xóa bài đăng"
   micropost_invalid : "Bài đăng không hợp lệ"
   deleted_fail: "Xóa không thành công"
+  following: "Đang theo dõi"
+  followers: "Người theo dõi"
+  follow: "Theo dõi"
+  unfollow: "Bỏ theo dõi"
   layouts:
     header:
       logotext: "sample app"
